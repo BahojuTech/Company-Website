@@ -11,7 +11,7 @@ type  MarketingCardProps = {
 const TestimonialCard = ({img, title, name, desc}: MarketingCardProps) => {
   return (
     <div className='text-center bg-white p-3 place-items-center grid grid-col-4 w-[25%] gap-5 rounded-lg'>
-        <div className=' m-auto min-h-[150px] leading-5 px-6 font-semibold' >{desc}</div>
+        <div className=' m-auto min-h-[150px] leading-5 px-6' >{desc}</div>
         
         <Image src={img || ''} alt='image' width={73.18} height={71.2} className='m-auto' />
            

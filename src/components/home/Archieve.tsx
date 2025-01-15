@@ -17,7 +17,7 @@ const Archieve = () => {
                     <div>
                         <h4 className='text-4xl text-white  mb-2'>What we have achieved so far</h4>
                     </div>
-                    <div  className='  flex gap-44  mx-auto'>
+                    <div  className='  flex gap-36  mx-auto'>
                         <ArchieveStat  number={300} desc='Client'/>
                         <ArchieveStat  number={500} desc='Project'/>
                         <ArchieveStat  number={14} desc='Professional Employees'/>
