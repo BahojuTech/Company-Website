@@ -1,9 +1,10 @@
 import React from 'react'
+import Training from '@/components/training/Training'
 
-const page = () => {
+const TrainingPage = () => {
   return (
-    <div>page</div>
+    <Training />
   )
 }
 
-export default page
+export default TrainingPage
