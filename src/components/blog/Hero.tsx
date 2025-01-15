@@ -21,7 +21,7 @@ const Hero = () => {
 
     return (
         <section className={`w-full bg-white`}>
-            <main className='text-white w-full max-w-7xl mx-auto relative'>
+            <main className='text-white w-full max-w-[95rem] mx-auto relative'>
                 {
                     images.map((image, index) => (<img key={index} src={image} className={`absolute object-top object-cover w-full h-full z-10 ${index === currentIndex ? "opacity-100" : "opacity-0"}`} style={{ transition: "opacity 1s ease-in-out" }} />))
                 }

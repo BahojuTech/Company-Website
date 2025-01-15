@@ -4,7 +4,7 @@ import BlogCard from './BlogCard'
 const BlogBody = () => {
     return (
         <section className='w-full bg-cyan-100'>
-            <main className='max-w-7xl w-full mx-auto px-5 md:px-10 py-20'>
+            <main className='max-w-[95rem] w-full mx-auto px-5 md:px-20 py-24'>
                 <BlogCard />
             </main>
         </section>
