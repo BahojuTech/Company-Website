@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${instrument_sans} ${geistMono}`}
       >
-        {/* <Navbar/> */}
+        <Navbar/>
         {children}
         <Footer/>
       </body>

@@ -7,7 +7,7 @@ type  ArchieveCardProps = {
 
 const ArchieveStat = ({ number, desc}: ArchieveCardProps) => {
   return (
-    <div className='text-center   grid grid-col-4  shadow-xl rounded-lg'>
+    <div className='text-center  grid grid-col-4  shadow-xl rounded-lg'>
         
 
         <div className='text-2xl font-semibold text-primary'>{number}</div>
