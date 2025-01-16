@@ -38,7 +38,7 @@ const sections: Section[] = [
             (<li className='text-xl mt-2 list-none' key={4}><b>4. Personalization:</b> Tailored content and recommendations improve customer satisfaction and loyalty..</li>)
         ]
     },
-    {head: (<h2 className='text-xl font-bold'>Conclusion</h2>), body:(<p className='text-xl'>Digital marketing is no longer optional, it's an essential part of modern business success. Whether you're a small startup or an established enterprise, leveraging digital marketing strategies can help you build a stronger connection with your audience, drive measurable growth, and stay ahead of the competion<br/><br/>Are you ready to take your business to the next level? At <b>BAHOJU</b>, we specialize in crafting innovative digital marketing solutions tailored to your unique goals. Let's grow together!</p>)}
+    { head: (<h2 className='text-xl font-bold'>Conclusion</h2>), body: (<p className='text-xl'>Digital marketing is no longer optional, it's an essential part of modern business success. Whether you're a small startup or an established enterprise, leveraging digital marketing strategies can help you build a stronger connection with your audience, drive measurable growth, and stay ahead of the competion<br /><br />Are you ready to take your business to the next level? At <b>BAHOJU</b>, we specialize in crafting innovative digital marketing solutions tailored to your unique goals. Let's grow together!</p>) }
 ];
 
 const page = () => {
