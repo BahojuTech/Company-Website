@@ -12,7 +12,7 @@ const ContactForm = () => {
                         <input className='md:w-[48%] w-full mt-5 outline-none text-lg placeholder:text-black placeholder:font-medium bg-[#FFFFFF80] px-6 py-4 rounded border border-[#32A0CE]' type="text" placeholder='Phone'/>
                         <input className='md:w-[48%] w-full mt-5 outline-none text-lg placeholder:text-black placeholder:font-medium bg-[#FFFFFF80] px-6 py-4 rounded border border-[#32A0CE]' type="text" placeholder='Email'/>
                         <input className='w-full mt-5 outline-none text-lg placeholder:text-black placeholder:font-medium bg-[#FFFFFF80] px-6 py-4 rounded border border-[#32A0CE]' type="text" placeholder='Subject'/>
-                        <textarea className='w-full mt-5 outline-none text-lg placeholder:text-black placeholder:font-medium bg-[#FFFFFF80] px-6 py-4 rounded border border-[#32A0CE]' placeholder='Message'></textarea>
+                        <textarea className='w-full min-h-40 mt-5 outline-none text-lg placeholder:text-black placeholder:font-medium bg-[#FFFFFF80] px-6 py-4 rounded border border-[#32A0CE]' placeholder='Message'></textarea>
                     </div>
                 </main>
             </section>
