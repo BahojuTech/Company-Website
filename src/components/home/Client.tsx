@@ -3,7 +3,7 @@ import React from 'react'
 
 const Client = () => {
   return (
-   <section className='m-auto max-w-[1200px] p-20 ' > 
+   <section className='m-auto max-w-[1200px] py-24 bg-gray-50 ' > 
      <div className='text-center'>
         <h6 className='text-primary mb-2 text-xl font-semibold'>We have more than 200 satisified clients that works with us</h6>
        <div className='w-fit overflow-hidden m-auto flex gap-16'>

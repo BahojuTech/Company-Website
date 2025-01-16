@@ -3,7 +3,7 @@ import React from 'react'
 
 const WhoWeAre = () => {
   return (
-    <section className='bg-primaryDark h-screen flex items-center justify-center' >
+    <section className='bg-primaryDark py-20 flex items-center justify-center' >
         <div className='flex gap-52 max-w-[1200px] items-center justify-center'>
             <div className=' grid gap-5'>
                 <div>

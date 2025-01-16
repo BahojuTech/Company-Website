@@ -16,7 +16,7 @@ export default function Home() {
     <Hero/>
     <Marketing/>
     <WhoWeAre/>
-    <Brand/>
+    <Brand img="/Rectangle 6.png" title="Unleashing your brand's full potential with innovative digital marketing strategies"/>
     <Offer/>
     <Archieve/>
     <Experience/>

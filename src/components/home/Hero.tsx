@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { FaCircleArrowRight } from 'react-icons/fa6';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
@@ -43,10 +44,10 @@ const Hero = () => {
         <div className='text-center'>
          <h1 className={`text-white text-5xl font-bold mb-1 ${animation ? 'slideup' : 'hidden'}`}>Elevate Your Business with <span className='text-primaryThick'>BAHOJU's</span> <br />  Expertise </h1>
          <p className='text-white font-semibold mb-2'>Innovative marketing strategies tailored to your business goals by BAHOJU</p>
-         <div className='flex items-center gap-2 w-fit m-auto text-primaryThick border-2 border-primaryThick font-semibold p-2 rounded-lg  hover:text-white hover:bg-primaryThick transition duration-300 ease-in-out cursor-pointer'>
-            <span>Get started</span>
+         <Link href={'/contact'} className='flex items-center gap-2 w-fit m-auto text-primaryThick border-2 border-primaryThick font-semibold p-2 rounded-lg  hover:text-white hover:bg-primaryThick transition duration-300 ease-in-out cursor-pointer'>
+            <span>Hire us</span>
             <span className='text-2xl'><IoArrowForwardCircleOutline /></span>
-         </div>
+         </Link>
         </div>
     </section>
   )
