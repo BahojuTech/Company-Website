@@ -10,7 +10,6 @@ const navMenu = [
   {id: 3, menu: 'Blog', link: 'blog'},
   {id: 4, menu: 'About us', link: 'about'},
   {id: 5, menu: 'Training', link: 'training'},
-  {id: 6, menu: 'Careers', link: 'careers'},
   {id: 7, menu: 'Contact us', link: 'contact'},
 ]
 

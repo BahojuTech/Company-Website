@@ -1,13 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Brand = () => {
+type BrandProps = {
+  title?: string;
+  img?: string;
+}
+
+const Brand = ({title, img}: BrandProps) => {
   return (
     <section className=' h-[80vh] flex items-center justify-center' >
         <div className='flex gap-x-16 max-w-[1200px] items-center justify-center'>
             <div className='flex-1'>
-             <h3 className='text-2xl text-primary font-semibold mb-5'>Unleashing your brand's full potential with innovative digital marketing strategies</h3>
-             <Image src={'/Rectangle 6.png'} alt='/' width={500} height={354} />
+             <h3 className='text-2xl text-primary font-semibold mb-5'>{title}</h3>
+             <Image src={img || ''} alt='/' width={500} height={354} />
                 
             </div>
             <div className=' grid gap-5 flex-1 text-lg'>

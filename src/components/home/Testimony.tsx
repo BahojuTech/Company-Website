@@ -6,7 +6,7 @@ const Testimony = () => {
   return (
     <section className='h-screen flex items-center justify-center' >
         {/* Wrapper */}
-        <div className=' w-full bg-primary p-10 bg-opacity-60  '>
+        <div className=' w-full bg-primaryLight p-10 bg-opacity-60  '>
             
 
             <div className='flex m-auto gap-52 max-w-[1200px]  items-center justify-center'>
