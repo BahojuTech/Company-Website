@@ -9,7 +9,12 @@ const images: string[] = [
     "/carousel5.png",
 ];
 
-const Hero = () => {
+interface HeroProps {
+    title: string;
+    body: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ title, body }) => {
     const [currentIndex, setCurrentIndex] = useState<number>(0)
 
     useEffect(() => {
@@ -26,8 +31,8 @@ const Hero = () => {
                     images.map((image, index) => (<img key={index} src={image} className={`absolute object-top object-cover w-full h-full z-10 ${index === currentIndex ? "opacity-100" : "opacity-0"}`} style={{ transition: "opacity 1s ease-in-out" }} />))
                 }
                 <span className='z-20 relative'>
-                    <h1 className='md:pt-48 pt-36 text-center text-7xl font-semibold'>Blogs</h1>
-                    <p className='text-center pt-3 md:pb-48 pb-36 text-xl md:w-1/2 w-[90%] mx-auto'>Discover more insights and strategies to elevate your brand in the digital world with BAHOJU</p>
+                    <h1 className='md:pt-48 pt-36 text-center text-7xl font-semibold'>{title}</h1>
+                    <p className='text-center pt-3 md:pb-48 pb-36 text-xl md:w-1/2 w-[90%] mx-auto'>{body}</p>
                 </span>
             </main>
         </section>
