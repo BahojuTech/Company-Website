@@ -68,7 +68,7 @@ const WhyBahoju = () => {
         {/* Image fills the entire container */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/BJT_rectangle14.png"
+            src="/BJT_Rectangle14.png"
             alt="Background Image"
             fill
             className="object-cover"
