@@ -7,6 +7,7 @@ import Hero from "@/components/home/Hero";
 import Marketing from "@/components/home/Marketing";
 import Offer from "@/components/home/Offer";
 import Testimony from "@/components/home/Testimony";
+import WhiteBlock from "@/components/home/WhiteBlock/WhiteBlock";
 import WhoWeAre from "@/components/home/WhoWeAre";
 
 
@@ -18,7 +19,9 @@ export default function Home() {
     <WhoWeAre/>
     <Brand img="/Rectangle 6.png" title="Unleashing your brand's full potential with innovative digital marketing strategies"/>
     <Offer/>
+    <WhiteBlock/>
     <Archieve/>
+    <WhiteBlock/>
     <Experience/>
     <Testimony/>
     <Client/>

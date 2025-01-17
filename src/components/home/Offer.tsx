@@ -14,7 +14,7 @@ const Offer = () => {
                     <h2 className='text-4xl text-primary font-semibold mb-2'>What we offer</h2>
                     <p className='text-lg text-white font-light'>Empowering your brand to enhance customer experiences</p>
                 </div>
-                <div  className='flex gap-3 align-middle max-w-[1200px] mx-auto'>
+                <div  className='px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 align-middle max-w-[1200px] mx-auto'>
                     <OfferCard icon={<MdPhonelink />} title='Digital Marketing services'  desc='Digital marketing services boost online presence, drive engagement and increase conversions through strategic campaigns.'/>
                     <OfferCard icon={<CiCloudOn />} title='Software & Mobile App Development' desc='Software and mobile app development involves creating applications to enhance user experiences and functionality.'/>
                     <OfferCard icon={<CiCloudOn />} title='Business Branding' bgButton={true}  desc='Business branding is the strategic process of creating a unique identity and image for a company, fostering customer loyalty and differentiation through consistent messaging, visuals and values'/>

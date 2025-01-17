@@ -40,17 +40,17 @@ const Experience = () => {
   return (
     <section
       id="experience-section"
-      className="bg-primaryDark h-screen flex items-center justify-center"
+      className="bg-primaryDark py-10 flex items-center justify-center"
     >
-      <div className="flex gap-52 max-w-[1200px] items-center justify-center">
+      <div className="px-6 grid gap-10 lg:flex lg:gap-52 max-w-[1200px] items-center justify-center">
         <Image
           src={'/Phone.png'}
           alt='/'
           width={360}
           height={570}
-          className={`${animation ? 'slideup' : 'opacity-0'}`}
+          className={`${animation ? 'slideup' : 'opacity-0'} m-auto`}
         />
-        <div className="grid gap-5">
+        <div className="grid gap-5 ">
           <div>
             <h2 className="text-4xl text-primary font-semibold">Enhancing your brand’s customer experience</h2>
             <p className="text-white">
