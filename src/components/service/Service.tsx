@@ -14,22 +14,6 @@ const images: string[] = [
 const Service = () => {
   return (
     <div className="max-w-1200">
-      {/* <div className="relative min-h-screen">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-xl md:text-6xl font-semibold text-center z-10">
-            Our Services
-          </h1>
-        </div>
-
-        <div className="absolute inset-0">
-          <Image
-            src="/BJT_rectangle1.png"
-            alt="Background Image"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div> */}
       <HeroCarousel
         images={images}
         title="Our Services"

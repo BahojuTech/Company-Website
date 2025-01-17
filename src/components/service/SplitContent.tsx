@@ -11,7 +11,7 @@ interface ServiceSectionProps {
     backgroundColor?: string;
     reverse?: boolean; 
     textColor?: string;
-  }
+}
 
 const SplitContent: React.FC<ServiceSectionProps> = ({
   title,
@@ -30,14 +30,10 @@ const SplitContent: React.FC<ServiceSectionProps> = ({
       style={{ backgroundColor }}
     >
       <div className="px-6 md:px-12 lg:px-24 py-10">
-        <div
-          className={`flex flex-col lg:flex-row justify-between gap-8 ${
-            reverse ? "lg:flex-row-reverse" : ""
-          }`}
-        >
-          {/* Text Section */}
-          <div className="flex-1">
-            <h2 className={`text-[#0088cc] text-2xl font-bold mb-4`}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Text Content */}
+          <div className={`${reverse ? 'lg:order-2' : 'lg:order-1'}`}>
+            <h2 className="text-[#0088cc] text-2xl font-bold mb-4">
               {title}
             </h2>
             <p className={`mb-6 leading-relaxed text-${textColor}`}>
@@ -56,14 +52,14 @@ const SplitContent: React.FC<ServiceSectionProps> = ({
             </button>
           </div>
 
-          {/* Image Section */}
-          <div className="relative flex-1 transform transition-transform duration-300 hover:scale-105">
-            <div className="w-full max-w-md mx-auto aspect-w-4 aspect-h-3">
+          {/* Image Content */}
+          <div className={`${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
+            <div className="relative w-full h-[300px] lg:h-[400px]">
               <Image
                 src={imageSrc}
                 alt={imageAlt}
                 fill
-                className="object-cover rounded-3xl"
+                className="object-cover rounded-3xl transform transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>
