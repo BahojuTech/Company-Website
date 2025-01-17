@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 interface ContactProps {
@@ -9,7 +10,8 @@ const ContactCard: React.FC<ContactProps> = ({ title, image, body })=> {
     return (
         <>
             <div className='bg-white h-full text-center rounded-md shadow-[4px_4px_4px_#717171] py-16 px-12'>
-                <img className='mx-auto' src={image} alt="" />
+                {/* <img className='mx-auto' src={image} alt="" /> */}
+                <Image src={image} alt='image' width={100} height={100} className='m-auto' />
                 <h3 className='font-medium mt-6 text-xl text-[#005F87]'>{title}</h3>
                 <p className='text-xl mt-5 text-[#005F87]'>{body}</p>
             </div>

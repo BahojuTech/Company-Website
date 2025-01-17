@@ -21,7 +21,7 @@ const ContactInfo = () => {
                 <div className='mt-10 flex flex-wrap justify-around xl:px-10'>
                     {
                         Cards.map((card)=>(
-                            <div className='lg:p-6 w-full mt-5 lg:w-1/3 '>
+                            <div key={card.title} className='lg:p-6 w-full mt-5 lg:w-1/3 '>
                                 <ContactCard title={card.title} image={card.image} body={card.body}/>
                             </div>
                         ))

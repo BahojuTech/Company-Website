@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { ReactNode } from 'react';
 
 type Section = {
@@ -46,7 +47,8 @@ const page = () => {
         <>
             <main className='w-full bg-gray-200'>
                 <section className='lg:px-20 md:px-10 px-5 md:pb-12 pt-16 w-full max-w-[95rem] mx-auto'>
-                    <img src="/blimg.jpg" alt="blog image" className='w-full rounded-xl' />
+                    {/* <img src="/blimg.jpg" alt="blog image" className='w-full rounded-xl' /> */}
+                    <Image src={"/blimg.jpg" } alt="blog image" width={1000} height={300}  className='rounded-xl m-auto' />
                 </section>
                 {
                     sections.map((section, index) => (

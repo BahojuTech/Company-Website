@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 w-[70%] h-screen z-[9999] bg-white flex flex-col gap-4 transition-all duration-500 ease-in-out ${
+          className={`lg:hidden fixed top-0 right-0 w-[70%] h-screen z-[9999] bg-white flex flex-col gap-4 transition-all duration-500 ease-in-out ${
             open ? 'right-0' : '-right-full'
           }`}
         >
