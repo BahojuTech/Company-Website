@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import SplitContent from "./SplitContent";
 import WhyBahoju from "./WhyBahoju";
 import HeroCarousel from "../hero/HeroCarousel";
