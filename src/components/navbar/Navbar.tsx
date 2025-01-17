@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <GiHamburgerMenu
           className='text-4xl text-gray cursor-pointer md:hidden'
-          onClick={() => setOpen(true)}
+          onClick={() => setOpen(!open)}
         />
 
         {/* Mobile Menu */}
