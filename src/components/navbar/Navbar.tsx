@@ -28,6 +28,7 @@ const navMenu = [
 //   >
 //     {text}
 //   </button>
+    // extra nonses
 // );
 
 const Navbar = () => {
