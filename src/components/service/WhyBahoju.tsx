@@ -51,6 +51,7 @@ const WhyBahoju = () => {
               </div>
 
               {/* Image Section */}
+              {/* checking */}
               <div className="relative flex-1 transform transition-transform duration-300 hover:scale-105">
                 <div className="w-full max-w-md mx-auto aspect-w-4 aspect-h-3">
                   <Image
