@@ -7,6 +7,9 @@
     animation: slideUp 0.8s ease-out forwards;
 }
 
+
+
+
 @keyframes slideUp {
     0% {
         transform: translateY(70%);
@@ -18,31 +21,5 @@
     }
 }
 
-
-.infinite-scroll-left {
-    animation : scroll-left 15s linear infinite;
-   
-}
-@keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.infinite-scroll-right {
-    animation : scroll-right 15s linear infinite;
-   
-}
-@keyframes scroll-right {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
 
 

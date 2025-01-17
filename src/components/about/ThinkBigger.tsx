@@ -2,8 +2,8 @@ import React from 'react'
 
 const ThinkBigger = () => {
   return (
-    <section className='bg-primaryLight py-20'>
-        <div className='flex max-w-[1200px] m-auto justify-between items-center'>
+    <section className='bg-primaryLight py-20 px-6'>
+        <div className='grid lg:flex max-w-[1200px] m-auto justify-between items-center gap-2'>
             <h4 className='flex-1 text-3xl text-primaryThick font-bold'>Think bigger, build <br /> Smarter, solve harder</h4>
 
             <p className='flex-1'>

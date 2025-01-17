@@ -12,7 +12,7 @@ const strenghts = [
 const Started = () => {
   return (
     <section className='bg-gray-50 py-10'>
-        <div className='flex justify-between items-center max-w-[1200px] m-auto'>
+        <div className='grid grid-cols-1 px-6 lg:grid-cols-2 gap-2 justify-between items-center max-w-[1200px] m-auto'>
           
             <div className='flex-1 grid gap-3'>
                 <h4 className='text-primaryThick font-bold text-2xl'>Started with passion, building with trust.</h4>

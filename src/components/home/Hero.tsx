@@ -35,14 +35,14 @@ const Hero = () => {
         {
           images.map((image, index) => (
             <Image src={image} key={index} alt='hero images' fill sizes='100vw' 
-            className={`object-ontain ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`} 
+            className={`object-cover ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`} 
             style={{ transition: "opacity 1s ease-in-out" }} />
           ))
         }
         
         </div>
         <div className='text-center'>
-         <h1 className={`text-white text-5xl font-bold mb-1 ${animation ? 'slideup' : 'hidden'}`}>Elevate Your Business with <span className='text-primaryThick'>BAHOJU's</span> <br />  Expertise </h1>
+         <h1 className={`text-white text-3xl md:text-5xl font-bold mb-1 ${animation ? 'slideup' : 'hidden'}`}>Elevate Your Business with <span className='text-primaryThick'>BAHOJU's</span> <br />  Expertise </h1>
          <p className='text-white font-semibold mb-2'>Innovative marketing strategies tailored to your business goals by BAHOJU</p>
          <Link href={'/contact'} className='flex items-center gap-2 w-fit m-auto text-primaryThick border-2 border-primaryThick font-semibold p-2 rounded-lg  hover:text-white hover:bg-primaryThick transition duration-300 ease-in-out cursor-pointer'>
             <span>Hire us</span>
