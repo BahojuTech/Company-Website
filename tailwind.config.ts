@@ -9,6 +9,16 @@ export default {
   theme: {
     extend: {
       keyframes: {
+        //for clients
+        scroll: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        scrollLg: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        //for testimony
         slide: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
@@ -19,8 +29,9 @@ export default {
         },
       },
       animation: {
-        slide: 'slide 15s linear infinite',
-        slideLg: 'slideLg 10s linear infinite',
+        scroll: 'scroll 20s linear infinite',
+        slide: 'slide 300s linear infinite',
+        slideLg: 'slideLg 30s linear infinite',
       },
       colors: {
         primary: '#32A0CE',

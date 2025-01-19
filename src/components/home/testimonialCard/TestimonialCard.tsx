@@ -10,7 +10,7 @@ type MarketingCardProps = {
 
 const TestimonialCard = ({ img, title, name, desc }: MarketingCardProps) => {
   return (
-    <div className="text-center bg-white p-5 w-[90vw] lg:w-[300px] grid gap-3 rounded-lg shadow-md">
+    <div className="text-center bg-white p-5 w-[70vw] lg:w-[300px] grid gap-3 rounded-lg shadow-md">
       <div className="m-auto min-h-[100px] text-sm text-gray-700">{desc}</div>
       <Image
         src={img || ''}

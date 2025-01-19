@@ -30,7 +30,7 @@ const Hero = () => {
 
 
   return (
-    <section className=" h-[110vh] flex justify-center items-center relative">
+    <section className=" h-[100vh] flex justify-center items-center relative px-1">
       <div className="absolute w-full h-full top-0 left-0 -z-10">
         {
           images.map((image, index) => (
@@ -41,7 +41,7 @@ const Hero = () => {
         }
         
         </div>
-        <div className='text-center'>
+        <div className='text-center -translate-y-10'>
          <h1 className={`text-white text-3xl md:text-5xl font-bold mb-1 ${animation ? 'slideup' : 'hidden'}`}>Elevate Your Business with <span className='text-primaryThick'>BAHOJU's</span> <br />  Expertise </h1>
          <p className='text-white font-semibold mb-2'>Innovative marketing strategies tailored to your business goals by BAHOJU</p>
          <Link href={'/contact'} className='flex items-center gap-2 w-fit m-auto text-primaryThick border-2 border-primaryThick font-semibold p-2 rounded-lg  hover:text-white hover:bg-primaryThick transition duration-300 ease-in-out cursor-pointer'>
