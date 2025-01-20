@@ -7,6 +7,11 @@ import Marketing from '@/components/about/Marketing';
 import Brand from '@/components/home/Brand';
 import Testimony from '@/components/home/Testimony';
 import Started from '@/components/about/Started';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About"
+};
 
 
 const images: string[] = [

@@ -3,6 +3,11 @@ import ContactForm from '@/components/contact/ContactForm'
 import ContactInfo from '@/components/contact/ContactInfo'
 import HeroCarousel from '@/components/hero/HeroCarousel'
 import React from 'react'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Contact"
+};
 
 const images: string[] = [
     "/carousel1.jpg",
