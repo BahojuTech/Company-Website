@@ -77,7 +77,7 @@ const Navbar = () => {
           <div className="flex gap-6 flex-grow justify-end pr-6">
             {navMenu.map((menu) => (
               <Link
-                href={`/${menu.link}`}
+                href={menu.link}
                 key={menu.id}
                 className="hover:text-blue-600 transition-colors"
               >
