@@ -69,11 +69,11 @@ const Navbar = () => {
       <div className="flex justify-between items-center max-w-[1200px] mx-auto w-full px-4 py-3">
         {/* Logo */}
         <Link href="/">
-          <Image src="/BJT_logo.jpg" width={100} height={100} alt="logo" className="w-auto h-12" />
+          <Image src="/logo_3.png" width={100} height={100} alt="logo" className="w-auto h-10 md:h-20" />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="items-center hidden md:flex">
+        <div className="items-center hidden lg:flex">
           <div className="flex gap-6 flex-grow justify-end pr-6">
             {navMenu.map((menu) => (
               <Link
@@ -85,11 +85,11 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-          <Button text="Get started" />
+          <Button link='/contact' text="Hire us" />
         </div>
 
         {/* Mobile Menu Button */}
-        <div ref={toggleButtonRef} className="md:hidden">
+        <div ref={toggleButtonRef} className="lg:hidden">
           <GiHamburgerMenu
             className="text-4xl text-gray-600 cursor-pointer hover:text-blue-600 transition-colors"
             onClick={() => setIsOpen(!isOpen)}

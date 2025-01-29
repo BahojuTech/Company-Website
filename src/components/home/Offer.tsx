@@ -3,6 +3,7 @@ import React from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { CiCloudOn } from "react-icons/ci";
 import { MdPhonelink } from "react-icons/md";
+import Link from 'next/link';
 
 
 const Offer = () => {
@@ -20,9 +21,9 @@ const Offer = () => {
                     <OfferCard icon={<CiCloudOn />} title='Business Branding' bgButton={true}  desc='Business branding is the strategic process of creating a unique identity and image for a company, fostering customer loyalty and differentiation through consistent messaging, visuals and values'/>
                     <OfferCard icon={<FaSearch />} title='Cloud Computing & Storage Solutions' desc='Cloud computing and storage solutions provide scalable, on-demand access to data and computing resources online.'/>
                 </div>
-                <div className='text-white bg-primary w-fit m-auto py-3 px-6 rounded-xl'>
+                <Link href={'/service'} className='text-white bg-primary w-fit m-auto py-3 px-6 rounded-xl'>
                 Explore All our services
-                </div>
+                </Link>
             </div>
         </div>
        
