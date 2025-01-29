@@ -5,36 +5,24 @@ import Link from 'next/link';
 import React, { useState, useEffect, useRef } from 'react';
 import Button from '../Button/Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { usePathname } from 'next/navigation';
 
 const navMenu = [
   { id: 1, menu: 'Home', link: '/' },
-  { id: 2, menu: 'Service', link: 'service' },
-  { id: 3, menu: 'Blog', link: 'blog' },
-  { id: 4, menu: 'About us', link: 'about' },
-  { id: 5, menu: 'Training', link: 'training' },
-  { id: 6, menu: 'Contact us', link: 'contact' },
+  { id: 2, menu: 'Service', link: '/service' },
+  { id: 3, menu: 'Blog', link: '/blog' },
+  { id: 4, menu: 'About us', link: '/about' },
+  { id: 5, menu: 'Training', link: '/training' },
+  { id: 6, menu: 'Contact us', link: '/contact' },
 ];
 
-// interface ButtonProps {
-//   text: string;
-//   onClick?: () => void;
-//   className?: string;
-// }
 
-// const Button: React.FC<ButtonProps> = ({ text, onClick, className }) => (
-//   <button
-//     onClick={onClick}
-//     className={`bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors ${className}`}
-//   >
-//     {text}
-//   </button>
-    // extra nonses
-// );
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
   const toggleButtonRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -79,7 +67,7 @@ const Navbar = () => {
               <Link
                 href={menu.link}
                 key={menu.id}
-                className="hover:text-blue-600 transition-colors"
+                className={`${pathname == menu.link && 'bg-blue-600 text-white px-3 py-1'} transition-colors`}
               >
                 {menu.menu}
               </Link>

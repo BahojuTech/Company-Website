@@ -15,7 +15,6 @@ const Footer = () => {
   const support = [
     { label: 'Contact us', href: '/contact' },
     { label: 'FAQ', href: '/faq' },
-    { label: 'Forums', href: '/forums' }
   ];
 
   const contactInfo = {
@@ -66,7 +65,7 @@ const Footer = () => {
               {services.map((service) => (
                 <li key={service}>
                   <Link
-                    href="#"
+                    href="/service"
                     className="text-gray-600 hover:text-blue-600 text-sm"
                   >
                     {service}
