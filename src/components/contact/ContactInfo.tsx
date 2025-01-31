@@ -12,7 +12,7 @@ type Card = {
 const Cards: Card[] = [
     {image: "/location.jpg", title: "Location", body: "44 Community Road, Off Allen, Ikeja, Lagos State", link: "https://www.google.com/maps/search/?api=1&query=44+Community+Road,+Off+Allen,+Ikeja,+Lagos+State"},
     {image:"/email.jpg", title: "Email", body:"Info@bahojutech.com", link: "mailto:chimevictor.cv@gmail.com"},
-    {image:"/phone.jpg", title: "Call us", body:"+234 807 376 2546", link: "tel:+234 9078608642"}
+    {image:"/phone.jpg", title: "Call us", body:"+234 807 376 2546", link: "tel:+234 8073762546"}
 ]
 const ContactInfo = () => {
     return (
