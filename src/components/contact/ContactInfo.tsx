@@ -1,16 +1,18 @@
 import React from 'react'
 import ContactCard from './ContactCard'
+import Link from 'next/link';
 
 type Card = {
-    image: string,
-    title: string,
-    body: string
+    image: string;
+    title: string;
+    body: string;
+    link?: string;
 };
 
 const Cards: Card[] = [
-    {image: "/location.jpg", title: "Location", body: "44 Community Road, Off Allen, Ikeja, Lagos State"},
-    {image:"/email.jpg", title: "Email", body:"Info@bahojutech.com"},
-    {image:"/phone.jpg", title: "Call us", body:"+234 807 376 2546"}
+    {image: "/location.jpg", title: "Location", body: "44 Community Road, Off Allen, Ikeja, Lagos State", link: "https://www.google.com/maps/search/?api=1&query=44+Community+Road,+Off+Allen,+Ikeja,+Lagos+State"},
+    {image:"/email.jpg", title: "Email", body:"Info@bahojutech.com", link: "mailto:chimevictor.cv@gmail.com"},
+    {image:"/phone.jpg", title: "Call us", body:"+234 807 376 2546", link: "tel:+234 9078608642"}
 ]
 const ContactInfo = () => {
     return (
@@ -21,9 +23,9 @@ const ContactInfo = () => {
                 <div className='mt-10 flex flex-wrap justify-around xl:px-10'>
                     {
                         Cards.map((card)=>(
-                            <div key={card.title} className='lg:p-6 w-full mt-5 lg:w-1/3 '>
+                            <Link href={card.link || ""} key={card.title} className='lg:p-6 w-full mt-5 lg:w-1/3 '>
                                 <ContactCard title={card.title} image={card.image} body={card.body}/>
-                            </div>
+                            </Link>
                         ))
                     }
                 </div>
