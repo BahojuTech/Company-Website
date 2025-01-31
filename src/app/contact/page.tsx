@@ -23,7 +23,7 @@ const page = () => {
         <HeroCarousel images={images} title={"Contact us"}  description={"Start the conversations to established good relationship and business"} />
             {/* <Hero title={"Contact us"} body={"Start the conversations to established good relationship and business"} /> */}
             <ContactInfo />
-            <ContactForm />
+            {/* <ContactForm /> */}
         </>
     )
 }
