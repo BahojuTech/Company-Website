@@ -110,7 +110,7 @@ const Navbar = () => {
           <div className="flex flex-col gap-4 px-6 py-4">
             {navMenu.map((menu) => (
               <Link
-                href={`/${menu.link}`}
+                href={menu.link}
                 key={menu.id}
                 className="text-lg hover:text-blue-600 transition-colors"
                 onClick={() => setIsOpen(false)}
