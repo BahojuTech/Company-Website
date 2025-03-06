@@ -11,9 +11,10 @@ type Card = {
 
 const Cards: Card[] = [
     {image: "/location.jpg", title: "Location", body: "44 Community Road, Off Allen, Ikeja, Lagos State", link: "https://www.google.com/maps/search/?api=1&query=44+Community+Road,+Off+Allen,+Ikeja,+Lagos+State"},
-    {image:"/email.jpg", title: "Email", body:"Info@bahojutech.com", link: "mailto:chimevictor.cv@gmail.com"},
-    {image:"/phone.jpg", title: "Call us", body:"+234 807 376 2546", link: "tel:+234 8073762546"}
-]
+    {image: "/email.jpg", title: "Email", body: "Info@bahojutech.com", link: "mailto:info@bahojutech.com"},
+    {image: "/phone.jpg", title: "Call us", body: "+234 807 376 2546", link: "tel:+2348073762546"}
+];
+
 const ContactInfo = () => {
     return (
         <section className='w-full bg-[#D5E5EC]'>
@@ -22,9 +23,9 @@ const ContactInfo = () => {
                 <p className='text-xl mt-3 text-center'>Contact us for customized solutions. Enroll today to transform your career.</p>
                 <div className='mt-10 flex flex-wrap justify-around xl:px-10'>
                     {
-                        Cards.map((card)=>(
+                        Cards.map((card) => (
                             <Link href={card.link || ""} key={card.title} className='lg:p-6 w-full mt-5 lg:w-1/3 '>
-                                <ContactCard title={card.title} image={card.image} body={card.body}/>
+                                <ContactCard title={card.title} image={card.image} body={card.body} />
                             </Link>
                         ))
                     }
@@ -34,4 +35,4 @@ const ContactInfo = () => {
     )
 }
 
-export default ContactInfo
+export default ContactInfo;
