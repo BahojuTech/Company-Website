@@ -1,6 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
 
+const missionStatement = [
+  {id:1, mission: 'To pioneer the development of cutting-edge technology solutions that address critical challenges, driving digital transformation and achieving significant business outcomes. '},
+  {id:2, mission: 'To cultivate and empower emerging talent through targeted skill development, enabling the next generation to innovate and lead in the digital sphere.'},
+  {id:3, mission: 'To provide businesses with scalable, data-driven strategies that optimize operational efficiency, enhance customer engagement, and foster sustainable growth.'}
+]
+
+const visionStatement = [
+  {id:1, mission: 'To establish Ledih as a preeminent global leader in digital innovation, delivering transformative solutions that catalyze business success and drive sustained industry growth.'},
+  {id:2, mission: 'To redefine brand-audience engagement through advanced technology and data-driven strategic solutions.'},
+]
+
+
 const WhoWeAre = () => {
   return (
     <section className='bg-primaryDark py-20 flex items-center justify-center'>
@@ -18,15 +30,19 @@ const WhoWeAre = () => {
           </div>
           <div>
             <h2 className='text-3xl text-primary font-semibold mb-2'>Our Mission</h2>
-            <p className='text-white font-semibold'>
-              Bahoju is a tech company dedicated to delivering cutting-edge technology solutions while equipping individuals with the skills to thrive in a digital world.
-            </p>
+            <ol className='text-white font-semibold pl-5'>
+              {
+                missionStatement.map(mission => <li key={mission.id} className='list-decimal'>{mission.mission}</li>)
+              }
+            </ol>
           </div>
           <div>
             <h2 className='text-3xl text-primary font-semibold mb-2'>Our Vision</h2>
-            <p className='text-white font-semibold'>
-              Bahoju is a tech company dedicated to delivering cutting-edge technology solutions while equipping individuals with the skills to thrive in a digital world.
-            </p>
+            <ol className='text-white font-semibold pl-5'>
+              {
+                visionStatement.map(mission => <li className='list-decimal' key={mission.id}>{mission.mission}</li>)
+              }
+            </ol>
           </div>
         </div>
 

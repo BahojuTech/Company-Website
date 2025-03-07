@@ -18,7 +18,7 @@ const Archieve = () => {
                         <ArchieveStat  number={300} desc='Client'/>
                         <ArchieveStat  number={500} desc='Project'/>
                         <ArchieveStat  number={14} desc='Professional Employees'/>
-                        <ArchieveStat  number={1250} desc='Hours of Suppor'/>
+                        <ArchieveStat  number={1250} desc='Hours of Support'/>
                     </div>
                 </div>
             </div>

@@ -59,9 +59,9 @@ const Experience = () => {
           </div>
           <div>
             <ExperienceCard icon={<FaMessage />} title="FREE CONSULTATION" desc="Get a free consultation today and discover tailored digital strategies to grow your business" />
-            <ExperienceCard icon={<TbChessQueenFilled />} title="FREE CONSULTATION" desc="Get a free consultation today and discover tailored digital strategies to grow your business" />
-            <ExperienceCard icon={<LuChartNoAxesCombined />} title="FREE CONSULTATION" desc="Get a free consultation today and discover tailored digital strategies to grow your business" />
-            <ExperienceCard icon={<RiCustomerService2Fill />} title="FREE CONSULTATION" desc="Get a free consultation today and discover tailored digital strategies to grow your business" />
+            <ExperienceCard icon={<TbChessQueenFilled />} title="PROFESSIONAL EXPERTS" desc="Our professional experts deliver innovative strategies to drive your brands growth and online success" />
+            <ExperienceCard icon={<LuChartNoAxesCombined />} title="TARGET ORIENTED" desc="BAHOJU delivers data-driven,  target-oriented strategies to achieve your brand's goals with measurable results." />
+            <ExperienceCard icon={<RiCustomerService2Fill />} title="24/7 PREMIUM SUPPORT" desc="Enjoy round  the clock, premium support to ensure your business runs smoothly, anytime, anywhere" />
           </div>
         </div>
       </div>

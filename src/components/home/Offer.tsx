@@ -6,7 +6,9 @@ import { MdPhonelink } from "react-icons/md";
 import Link from 'next/link';
 
 
-const Offer = () => {
+
+
+const   Offer = () => {
   return (
     <section className='bg-primaryDark py-10  flex items-center justify-center' >
         <div className='flex gap-36 max-w-[1200px] items-center justify-center'>

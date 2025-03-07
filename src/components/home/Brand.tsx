@@ -4,9 +4,10 @@ import React from 'react'
 type BrandProps = {
   title?: string;
   img?: string;
+  children: any;
 }
 
-const Brand = ({title, img}: BrandProps) => {
+const Brand = ({title, img, children}: BrandProps) => {
   return (
     <section className='py-20 flex items-center justify-center' >
         <div className='grid text-center lg:text-left gap-6  lg:flex gap-x-16 max-w-[1200px] items-center justify-center px-6'>
@@ -17,17 +18,13 @@ const Brand = ({title, img}: BrandProps) => {
               </div>
             </div>
             <div className=' grid gap-5 flex-1 text-lg'>
-                <p>
-                At <span className='text-primary font-bold'>BAHOJU</span> , we believe every brand has untapped potentials. By leveraging innovative digital marketing strategies, 
-                we help businesses break through the noise, reaching their target audience with precisions from SEO to social management. 
-                Our customized approaches ensure your brand stands out, engages customers and drives growth. Unlock the growth, unlock the power of digital
-                 marketing and see your brand thrive like never before.
+             {children}
+                {/* <p>
+                At <span className='text-primary font-bold'>BAHOJU</span> , we believe that every brand has untapped potential waiting to be unlocked. Our mission is to recharge your brand, enhancing its value and positioning it for long-term success in the competitive digital landscape. We use innovative digital marketing strategies to breathe new life into your brand and help it thrive in an ever-changing market.
                 </p>
                 <p>
-                Unleash your brand’s full potential with <span className='text-primary font-bold'>BAHOJU</span> , our team of experts uses cutting-edge digital marketing techniques to 
-                create campaigns that not only attract but also converts. We focus on tailored strategies that resonate with your audiences, 
-                increased brand visibility, and drive measurable results. Let us transform your digital presence into a powerhouse of success.
-                </p>
+                Your brand’s identity is the foundation of its success. We work with you to refine and elevate your brand’s image, ensuring it resonates with your target audience . Whether it’s a complete brand overhaul or a subtle refresh, we tailor our approach to fit your vision and goals.
+                </p> */}
             </div>
         </div>
        

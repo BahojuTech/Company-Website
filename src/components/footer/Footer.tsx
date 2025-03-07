@@ -43,9 +43,9 @@ const Footer = () => {
               results
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-blue-600 hover:text-blue-700">
+              {/* <Link href="#" className="text-blue-600 hover:text-blue-700">
                 <FaFacebook size={20} />
-              </Link>
+              </Link> */}
               <Link href="#" className="text-blue-600 hover:text-blue-700">
                 <FaInstagram size={20} />
               </Link>
