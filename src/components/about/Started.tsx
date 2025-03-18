@@ -3,11 +3,11 @@ import React from 'react'
 
 
 const strenghts = [
-    {title: 'Digital Marketing Services', perc: '100&'},
-    {title: 'Software & Mobile App development ', perc: '100&'},
-    {title: 'Cloud computing & Storage Solutions', perc: '100&'},
-    {title: 'Website Design & Development', perc: '100&'},
-    {title: 'Business Branding Solutions', perc: '100&'},
+    {title: 'Digital Marketing Services', perc: '100%'},
+    {title: 'Software & Mobile App development ', perc: '100%'},
+    {title: 'Cloud computing & Storage Solutions', perc: '100%'},
+    {title: 'Website Design & Development', perc: '100%'},
+    {title: 'Business Branding Solutions', perc: '100%'},
 ]
 const Started = () => {
   return (

@@ -30,17 +30,17 @@ const WhoWeAre = () => {
           </div>
           <div>
             <h2 className='text-3xl text-primary font-semibold mb-2'>Our Mission</h2>
-            <ol className='text-white font-semibold pl-5'>
+            <ol className='text-white font-semibold pl-8'>
               {
-                missionStatement.map(mission => <li key={mission.id} className='list-decimal'>{mission.mission}</li>)
+                missionStatement.map(mission => <li key={mission.id} className='list-decimal mb-3'>{mission.mission}</li>)
               }
             </ol>
           </div>
           <div>
             <h2 className='text-3xl text-primary font-semibold mb-2'>Our Vision</h2>
-            <ol className='text-white font-semibold pl-5'>
+            <ol className='text-white font-semibold pl-8'>
               {
-                visionStatement.map(mission => <li className='list-decimal' key={mission.id}>{mission.mission}</li>)
+                visionStatement.map(mission => <li className='list-decimal mb-3' key={mission.id}>{mission.mission}</li>)
               }
             </ol>
           </div>
