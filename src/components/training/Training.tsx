@@ -3,6 +3,7 @@ import SplitContent from "../service/SplitContent";
 import WhyBahoju from "../service/WhyBahoju";
 import Contact from "./Contact";
 import HeroCarousel from "../hero/HeroCarousel";
+import ContactInfo from "../contact/ContactInfo";
 
 const images: string[] = [
   "/carousel1.jpg",
@@ -93,7 +94,8 @@ const Training = () => {
       />
 
       <WhyBahoju />
-      <Contact />
+      {/* <Contact /> */}
+      <ContactInfo/>
     </div>
   );
 };
