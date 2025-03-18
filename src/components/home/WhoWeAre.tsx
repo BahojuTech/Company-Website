@@ -8,7 +8,7 @@ const missionStatement = [
 ]
 
 const visionStatement = [
-  {id:1, mission: 'To establish Ledih as a preeminent global leader in digital innovation, delivering transformative solutions that catalyze business success and drive sustained industry growth.'},
+  {id:1, mission: 'To establish Bahojutech as a preeminent global leader in digital innovation, delivering transformative solutions that catalyze business success and drive sustained industry growth.'},
   {id:2, mission: 'To redefine brand-audience engagement through advanced technology and data-driven strategic solutions.'},
 ]
 
