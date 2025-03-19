@@ -5,6 +5,8 @@ import { client } from '@/lib/sanity';
 import { blogType } from '@/lib/blogType';
 import BlogCard from '@/components/blog/BlogCard';
 
+export const revalidate = 30;
+
 export const metadata: Metadata = {
   title: "Blog"
 };
