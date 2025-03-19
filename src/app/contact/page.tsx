@@ -1,4 +1,3 @@
-import Hero from '@/components/blog/Hero'
 import ContactForm from '@/components/contact/ContactForm'
 import ContactInfo from '@/components/contact/ContactInfo'
 import HeroCarousel from '@/components/hero/HeroCarousel'
