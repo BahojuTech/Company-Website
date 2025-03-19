@@ -21,8 +21,11 @@ export const metadata: Metadata = {
     default: "BahojuTech",
     template: "%s - Bahujutech"
   },
-  description: "At Bahoju, we empower brands to elevate customer experiences through innovative solutions. Our offerings include strategic digital marketing services to boost online presence and drive engagement, software and mobile app development to create seamless user experiences, business branding to craft unique and memorable identities, and cloud computing solutions for scalable and secure data access. Partner with us to unlock your brand's full potential with technology and creativity.",
-};
+  description:
+    "BahojuTech offers expert Digital Marketing, Web Design, App Development, Cloud Computing & Branding solutions. Hire professionals in Lagos today!",
+  keywords:
+    "Digital Marketing Services, Web Design, App Development, Cloud Solutions, Business Branding, SEO services, Social Media Marketing, Affordable software development, E-commerce website development",
+  };
 
 export default function RootLayout({
   children,
