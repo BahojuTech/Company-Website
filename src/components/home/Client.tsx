@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Client = () => {
   const logos = [
@@ -15,38 +16,42 @@ const Client = () => {
         </h6>
         <div className="relative w-[50%] m-auto overflow-hidden">
           <div className="flex animate-scroll">
-
             {/* First set of logos */}
             <div className="flex gap-16 shrink-0">
               {logos.map((logo, index) => (
-                <img
+                <Image
                   key={`logo1-${index}`}
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-20 h-8 object-contain"
+                  width={80}
+                  height={32}
+                  className="object-contain"
                 />
               ))}
             </div>
             {/* Duplicate set of logos for seamless loop */}
             <div className="flex gap-16 shrink-0 pl-16">
               {logos.map((logo, index) => (
-                <img
+                <Image
                   key={`logo2-${index}`}
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-20 h-8 object-contain"
+                  width={80}
+                  height={32}
+                  className="object-contain"
                 />
               ))}
             </div>
-
             {/* Duplicate 2 set of logos for seamless loop */}
             <div className="flex gap-16 shrink-0 pl-16">
               {logos.map((logo, index) => (
-                <img
+                <Image
                   key={`logo3-${index}`}
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-20 h-8 object-contain"
+                  width={80}
+                  height={32}
+                  className="object-contain"
                 />
               ))}
             </div>
