@@ -42,7 +42,7 @@ const Hero = () => {
         
         </div>
         <div className='text-center -translate-y-10'>
-         <h1 className={`text-white text-3xl md:text-5xl font-bold mb-1 ${animation ? 'slideup' : 'hidden'}`}>Elevate 2 Your Business with <span className='text-primaryThick'>BAHOJU's</span> <br />  Expertise </h1>
+         <h1 className={`text-white text-3xl md:text-5xl font-bold mb-1 ${animation ? 'slideup' : 'hidden'}`}>Elevate Your Business with <span className='text-primaryThick'>BAHOJU's</span> <br />  Expertise </h1>
          <p className='text-white font-semibold mt-6 mb-2'>Innovative marketing strategies tailored to your business goals by BAHOJU</p>
          <Link href={'/contact'} className='flex items-center gap-2 w-fit m-auto text-primaryThick border-2 border-primaryThick font-semibold p-2 rounded-lg  hover:text-white hover:bg-primaryThick transition duration-300 ease-in-out cursor-pointer'>
             <span>Hire us</span>
