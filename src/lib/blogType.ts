@@ -10,4 +10,5 @@ export type fullBlog = {
     title: string;
     content: any;
     titleImage: any;
+    smallDescription: string;
 }
