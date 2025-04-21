@@ -3,11 +3,10 @@ import HeroCarousel from '@/components/hero/HeroCarousel'
 import Client from '@/components/home/Client';
 import WhoWeAre from '@/components/home/WhoWeAre';
 import React from 'react'
-import Marketing from '@/components/about/Marketing';
-import Brand from '@/components/home/Brand';
-import Testimony from '@/components/home/Testimony';
-import Started from '@/components/about/Started';
 import { Metadata } from 'next';
+import TheTeam from '@/components/team/TheTeam';
+import JoinTheTeam from '@/components/team/JoinTheTeam';
+import Values from '@/components/values/Values';
 
 export const metadata: Metadata = {
   title: "About"
@@ -15,11 +14,7 @@ export const metadata: Metadata = {
 
 
 const images: string[] = [
-  "/carousel1.jpg",
-  "/carousel2.png",
-  "/carousel3.png",
-  "/carousel4.png",
-  "/carousel5.png",
+  '/service/ServiceHero.png'
 ];
 
 const page = () => {
@@ -27,22 +22,14 @@ const page = () => {
     <section>
        <HeroCarousel
         images={images}
-        title="About us"
-        description="Fueled by creativity,  Empowered by results."
+        title="HELP BUSINESSES GROW THROUGH TECH SOLUTIONS."
       />
+      <ThinkBigger/>
       <WhoWeAre/>
       <Client/>
-      <ThinkBigger/>
-      <Marketing/>
-      <Brand title='Recharging your brand to its maximum value.' img='/Rectangle about.png'>
-        <p>At <span className='text-primary font-bold'>BAHOJU</span> , we believe that every brand has untapped potential waiting to be unlocked. Our mission is to recharge your brand, enhancing its value and positioning it for long-term success in the competitive digital landscape. We use innovative digital marketing strategies to breathe new life into your brand and help it thrive in an ever-changing market.
-        </p>
-        <p>
-        Your brand's identity is the foundation of its success. We work with you to refine and elevate your brand's image, ensuring it resonates with your target audience . Whether it's a complete brand overhaul or a subtle refresh, we tailor our approach to fit your vision and goals.
-        </p> 
-      </Brand>
-      <Started/>
-      <Testimony/>
+      <TheTeam/>
+      <Values/>
+      <JoinTheTeam/>
     </section>
   )
 }
