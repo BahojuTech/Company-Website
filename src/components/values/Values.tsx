@@ -92,7 +92,7 @@ const Values = () => {
             //   <h3 className="font-bold text-xl mb-2">{value.header}</h3>
             //   <p className="text-sm">{value.desc}</p>
             // </div>
-            <Image src={value.img} alt='vales' width={609} height={486}  className='w-80 h-auto'/>
+            <Image key={value.img} src={value.img} alt='vales' width={609} height={486}  className='w-80 h-auto'/>
           ))}
         </div>
       </div>
