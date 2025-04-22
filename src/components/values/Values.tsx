@@ -83,7 +83,8 @@ const Values = () => {
 
         {/* Flexbox row for last 2 values */}
         <div className="flex flex-col md:flex-row justify-center gap-8">
-          {values.slice(3).map((value) => (
+          {values.slice(3).map((value) => ( 
+            //jsut testung someting
             // <div
             //   key={value.id}
             //   className="bg-white text-[#005F87] p-6 rounded-2xl shadow-md w-full max-w-sm"
