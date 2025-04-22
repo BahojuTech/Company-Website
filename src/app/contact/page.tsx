@@ -19,7 +19,7 @@ const images: string[] = [
 const page = () => {
     return (
         <>
-        <HeroCarousel images={images} title={"Contact us"}  description={"Start the conversations to established good relationship and business"} />
+        <HeroCarousel image={'/hero/ServiceHero.png'}  title={"Contact us"}  description={"Start the conversations to established good relationship and business"} />
             {/* <Hero title={"Contact us"} body={"Start the conversations to established good relationship and business"} /> */}
             <ContactInfo />
             {/* <ContactForm /> */}

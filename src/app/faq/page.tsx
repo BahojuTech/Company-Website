@@ -39,7 +39,7 @@ const Page = () => {
 
   return (
     <section>
-      <HeroCarousel images={images} title='Frequently Asked Questions' description='Find answers to common questions about our services' />
+      <HeroCarousel image={'/hero/ServiceHero.png'}  title='Frequently Asked Questions' description='Find answers to common questions about our services' />
 
       <div className='bg-[#D5E5EC] pt-14 pb-32'>
         <h4 className='text-center mb-10'>This section covers most answers to all the common questions on our services</h4>
