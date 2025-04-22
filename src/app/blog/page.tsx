@@ -24,21 +24,13 @@ async function getData() {
   return data;
 }
 
-const images: string[] = [
-  "/carousel1.jpg",
-  "/carousel2.png",
-  "/carousel3.png",
-  "/carousel4.png",
-  "/carousel5.png",
-];
-
 const Page = async () => {
   const data = await getData()
 
   return (
     <>
       <HeroCarousel 
-        images={images} 
+        image={'/hero/ServiceHero.png'} 
         title="Blogs" 
         description='Discover more insights and strategies to elevate your brand in the digital world with BAHOJU"' 
       />
