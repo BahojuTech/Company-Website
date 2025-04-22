@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface HeroCarouselProps {
-  images: string[];
+  image: string;
   title: string;
   description?: string;
   titleClasses?: string;
@@ -12,7 +12,7 @@ interface HeroCarouselProps {
 }
 
 const HeroCarousel = ({
-  images,
+  image,
   title,
   description,
   titleClasses = "text-center text-6xl font-bold max-w-[900px] ",
@@ -20,32 +20,21 @@ const HeroCarousel = ({
 }: HeroCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(intervalId);
-  }, [images.length]);
+
 
   return (
     <div className="w-full h-screen relative -z-10 bg-[#f0f7ff] overflow-hidden">
       {/* Image Carousel */}
-      {images.map((image, index) => (
         <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out`}
         >
           <Image
             src={image}
-            alt={`Carousel image ${index + 1}`}
+            alt={`Background Image`}
             fill
             className="object-cover"
-            priority={index === 0}
           />
         </div>
-      ))}
 
       {/* Dark Overlay for Text Readability */}
       {/* <div className="absolute inset-0 bg-black/50 z-10" /> */}
