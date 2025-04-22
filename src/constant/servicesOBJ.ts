@@ -2,7 +2,7 @@ export const services = [
     {
         id:'digital-marketer',
         title:'DIGITAL MARKETING',
-        image: ['/hero/digitalHero.png'],
+        image: '/hero/digitalHero.png',
         extra: [
             {
                 id: 1,
@@ -30,7 +30,7 @@ export const services = [
     {
         id:'cloud-computing',
         title:'CLOUD COMPUTING & STORAGE SOLUTIONS',
-        image: ['/hero/digitalHero.png'],
+        image: '/hero/digitalHero.png',
         extra: [
             {
                 id: 1,
@@ -58,7 +58,7 @@ export const services = [
     {
         id:'training',
         title:'TRAININGS & INTERNSHIP',
-        image: ['/hero/digitalHero.png'],
+        image: '/hero/digitalHero.png',
         extra: [
             {
                 id: 1,
@@ -86,7 +86,7 @@ export const services = [
     {
         id:'business-branding',
         title:'BUSINESS BRANDING',
-        image: ['/hero/digitalHero.png'],
+        image: '/hero/digitalHero.png',
         extra: [
             {
                 id: 1,
@@ -114,7 +114,7 @@ export const services = [
     {
         id:'software',
         title:'SOFTWARE & MOBILE APP DEVELOPMENT',
-        image: ['/hero/digitalHero.png'],
+        image: '/hero/digitalHero.png',
         extra: [
             {
                 id: 1,

@@ -4,15 +4,12 @@ import WhyBahoju from "./WhyBahoju";
 import HeroCarousel from "../hero/HeroCarousel";
 import Work from "../work/Work";
 
-const images: string[] = [
-    '/service/ServiceHero.png'
-  ];
   
 const Service = () => {
   return (
     <div className="max-w-1200">
       <HeroCarousel
-        images={images}
+        image={'/hero/ServiceHero.png'}
         title="WE TURN UNCERTAINITY INTO A STRATEGIC ADVANTAGE."
       />
 

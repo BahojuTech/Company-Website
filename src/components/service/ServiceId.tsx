@@ -7,12 +7,10 @@ import Box from './Box'
 import SplitContent from './SplitContent'
 
 const ServiceId = ({service}:{service:string}) => {
-    const [image, setImage] = useState<any[]>([])
+    const [image, setImage] = useState<any>()
     const [box, setBox] = useState<any[]>([])
     const [title, setTiltle] = useState('')
     const [desc, setDesc] = useState('')
-
-    
 
     useEffect(() => {
       const serv = services.find(serv => serv.id === service);
@@ -27,7 +25,7 @@ const ServiceId = ({service}:{service:string}) => {
     <section >
       <div className='relative'>
       <HeroCarousel
-        images={image}
+        image={image}
         title={title}
       />
       </div>

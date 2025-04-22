@@ -13,15 +13,13 @@ export const metadata: Metadata = {
 };
 
 
-const images: string[] = [
-  '/service/ServiceHero.png'
-];
+
 
 const page = () => {
   return (
     <section>
        <HeroCarousel
-        images={images}
+        image={'/hero/ServiceHero.png'}
         title="HELP BUSINESSES GROW THROUGH TECH SOLUTIONS."
       />
       <ThinkBigger/>
