@@ -20,7 +20,7 @@ const Work = () => {
         <div className='flex items-center'>
             <Image src={'/work/image 34.png'} alt='image' width={705} height={703} />
             <div className='flex flex-col justify-between  h-[360px]'>
-            <h2 className="text-5xl font-bold text-white text-center tracking-wider ">
+            <h2 className="text-5xl font-bold text-white text-center tracking-wider "> 
               Our Work
             </h2>
             <Link href={'https://bahojuportfolio.netlify.app/'} target='_blank'>
