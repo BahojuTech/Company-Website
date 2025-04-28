@@ -46,10 +46,9 @@ const Values = () => {
 
       {/* Content */}
       <div className="max-w-6xl w-full z-10">
-        <h2 className="text-3xl font-semibold text-white text-center mb-2">
+        <h2 className="text-4xl font-bold text-white text-center mb-16">
           Our Values
         </h2>
-        <div className="h-[3px] w-[10%] bg-black mx-auto mb-16"></div>
 
         {/* Main Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-stretch">
