@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { FaChevronDown } from 'react-icons/fa' // <-- using react-icons
 
 const Hero = () => {
   const [animation, setAnimation] = useState(false)
@@ -11,8 +11,9 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="h-[100vh] flex justify-center items-center relative px-1">
-      <div className="absolute w-full h-full top-0 left-0 -z-10">
+    <section className="h-screen flex flex-col justify-center items-center relative px-4 md:px-8">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
         <Image
           src="/hero.png"
           alt="hero background"
@@ -22,10 +23,21 @@ const Hero = () => {
           style={{ transition: "opacity 1s ease-in-out" }}
         />
       </div>
-      <div className="text-center -translate-y-4">
-        <h1 className={`text-white text-3xl md:text-5xl font-bold mb-6 tracking-wide ${animation ? 'slideup' : 'hidden'}`}>
+
+      {/* Hero Content */}
+      <div className="text-center flex flex-col items-center">
+        <h1 className={`text-white font-bold tracking-wide text-3xl md:text-5xl leading-tight ${animation ? 'slideup' : 'hidden'} mb-4 md:mb-6`}>
           Scale Your Business with Our Expertise
         </h1>
+        <p className="text-white max-w-2xl mx-auto text-base md:text-lg px-2 -mt-3 md:-mt-2">
+          Unlock the full potential of your business with powerful marketing strategies
+          designed to drive results and exceed your goals.
+        </p>
+      </div>
+
+      {/* Scroll Down Arrow */}
+      <div className="absolute bottom-6 animate-bounce">
+        <FaChevronDown size={30} className="text-white" />
       </div>
     </section>
   )
