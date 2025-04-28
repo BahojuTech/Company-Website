@@ -1,52 +1,36 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 
-// const values = [
-//   {
-//     id: 1,
-//     header: 'Bold, Not Reckless',
-//     desc: 'We take smart risks, challenge the norm, and push boundaries—without compromising on quality or purpose.',
-//   },
-//   {
-//     id: 2,
-//     header: 'Quality',
-//     desc: "Whether it's the precision of our code, the aesthetics of our designs, or the reliability of our services, we believe that every detail matters in delivering excellence.",
-//   },
-//   {
-//     id: 3,
-//     header: 'Innovation',
-//     desc: 'We drive change with innovative tech, grounded in ethics, fairness, and accountability.',
-//   },
-//   {
-//     id: 4,
-//     header: 'Passion',
-//     desc: 'We build to leave a lasting impact on individuals, industries, and society as a whole.',
-//   },
-//   {
-//     id: 5,
-//     header: 'Growth',
-//     desc: 'We cultivate a culture of learning, experimentation, and improvement, empowering our team to evolve alongside the tech we create.',
-//   },
-// ];
+const values = [
+  {
+    id: 1,
+    header: 'Bold, Not Reckless',
+    desc: 'We take smart risks, challenge the norm, and push boundaries—without compromising on quality or purpose.',
+  },
+  {
+    id: 2,
+    header: 'Innovation',
+    desc: 'We drive change with innovative tech, grounded in ethics, fairness, and accountability.',
+    img: '/values/innovation.png', // Your innovation image
+  },
+  {
+    id: 3,
+    header: 'Quality',
+    desc: "Whether it's the precision of our code, the aesthetics of our designs, or the reliability of our services, we believe that every detail matters in delivering excellence.",
+  },
+  {
+    id: 4,
+    header: 'Passion',
+    desc: 'We build to leave a lasting impact on individuals, industries, and society as a whole.',
+  },
+  {
+    id: 5,
+    header: 'Growth',
+    desc: 'We cultivate a culture of learning, experimentation, and improvement, empowering our team to evolve alongside the tech we create.',
+  },
+];
 
-
-  const values = [
-    {
-      img: '/values/RECKLESS 1.png'
-    },
-    {
-      img: '/values/Quality 1.png'
-    },
-    {
-      img: '/values/INNOVATION 1.png'
-    },
-    {
-      img: '/values/PASSION 1.png'
-    },
-    {
-      img: '/values/GROWTH 1.png'
-    },
-  ];
 const Values = () => {
   return (
     <section className="relative py-20 px-6 flex justify-center items-center overflow-hidden">
@@ -65,36 +49,52 @@ const Values = () => {
         <h2 className="text-3xl font-semibold text-white text-center mb-2">
           Our Values
         </h2>
-        <div className='h-[3px] w-[10%] bg-black mx-auto mb-16'></div>
+        <div className="h-[3px] w-[10%] bg-black mx-auto mb-16"></div>
 
-        {/* Grid for top 3 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center mb-10">
-          {values.slice(0, 3).map((value) => (
-            // <div
-            //   key={value.id}
-            //   className="bg-white text-[#005F87] p-6 rounded-2xl shadow-md w-full max-w-sm"
-            // >
-            //   <h3 className="font-bold text-xl mb-2">{value.header}</h3>
-            //   <p className="text-sm">{value.desc}</p>
-            // </div>
-            <Image key={value.img} src={value.img} alt='vales' width={609} height={486} />
-          ))}
+        {/* Main Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-stretch">
+          {/* Left Column */}
+          <div className="flex flex-col justify-between h-full gap-8">
+            {/* Bold */}
+            <div className="bg-white text-[#005F87] p-6 rounded-2xl shadow-md flex-1">
+              <h3 className="font-bold text-xl mb-2">{values[0].header}</h3>
+              <p className="text-sm">{values[0].desc}</p>
+            </div>
+            {/* Passion */}
+            <div className="bg-white text-[#005F87] p-6 rounded-2xl shadow-md flex-1">
+              <h3 className="font-bold text-xl mb-2">{values[3].header}</h3>
+              <p className="text-sm">{values[3].desc}</p>
+            </div>
+          </div>
+
+          {/* Middle Column (Innovation) */}
+          <div className="flex flex-col items-center justify-center bg-white text-[#005F87] p-6 rounded-2xl shadow-md h-full">
+            <h3 className="font-bold text-2xl mb-4">{values[1].header}</h3>
+            <p className="text-sm text-center">{values[1].desc}</p>
+            <Image
+              src={values[1].img!}
+              alt="Innovation"
+              width={326}
+              height={203}
+              className="w-[326px] h-[203px] object-contain mt-6"
+            />
+          </div>
+
+          {/* Right Column */}
+          <div className="flex flex-col justify-between h-full gap-8">
+            {/* Quality */}
+            <div className="bg-white text-[#005F87] p-6 rounded-2xl shadow-md flex-1">
+              <h3 className="font-bold text-xl mb-2">{values[2].header}</h3>
+              <p className="text-sm">{values[2].desc}</p>
+            </div>
+            {/* Growth */}
+            <div className="bg-white text-[#005F87] p-6 rounded-2xl shadow-md flex-1">
+              <h3 className="font-bold text-xl mb-2">{values[4].header}</h3>
+              <p className="text-sm">{values[4].desc}</p>
+            </div>
+          </div>
         </div>
 
-        {/* Flexbox row for last 2 values */}
-        <div className="flex flex-col md:flex-row justify-center gap-8">
-          {values.slice(3).map((value) => ( 
-            //jsut testung someting
-            // <div
-            //   key={value.id}
-            //   className="bg-white text-[#005F87] p-6 rounded-2xl shadow-md w-full max-w-sm"
-            // >
-            //   <h3 className="font-bold text-xl mb-2">{value.header}</h3>
-            //   <p className="text-sm">{value.desc}</p>
-            // </div>
-            <Image key={value.img} src={value.img} alt='vales' width={609} height={486}  className='w-80 h-auto'/>
-          ))}
-        </div>
       </div>
     </section>
   );

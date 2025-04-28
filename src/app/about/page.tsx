@@ -19,7 +19,7 @@ const page = () => {
   return (
     <section>
        <HeroCarousel
-        image={'/hero/ServiceHero.png'}
+        image={'/hero/aboutHero.png'}
         title="HELP BUSINESSES GROW THROUGH TECH SOLUTIONS."
       />
       <ThinkBigger/>
