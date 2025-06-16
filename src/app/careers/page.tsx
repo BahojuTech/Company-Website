@@ -72,7 +72,7 @@ const page = () => {
                 <div
                 key={join.title}
                 style={{ backgroundColor: join.bg, color: join.color }}
-                className="relative text-center max-w-96 w-full pt-16 pb-6 px-4 rounded-xl flex flex-col items-center"
+                className="relative text-center max-w-96 w-full pt-16 pb-6 px-4 rounded-xl flex flex-col items-center "
                 >
                 <div className="absolute -top-6 w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md">
                     {/* Replace this with actual icon if available */}
