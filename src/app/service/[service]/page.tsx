@@ -1,7 +1,7 @@
 import ServiceId from '@/components/service/ServiceId'
 import React from 'react'
 
-const page = async({params}: any) => {
+const Page = async({params}: any) => {
     const {service} = await params
     console.log("first", service)
   return (
@@ -9,4 +9,4 @@ const page = async({params}: any) => {
   )
 }
 
-export default page
+export default Page

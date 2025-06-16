@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import { Metadata } from 'next';
 import ContactUs from '@/components/contact/ContactUs';
 import Faq from '@/components/contact/Faq';
 
@@ -13,7 +12,7 @@ const menus = [
   {label: 'FAQs', content: <Faq/>}
 ]
 
-const page = () => {
+const Page = () => {
   const [activeMenu, setActiveMenu] = useState(menus[0].label)
 
     const activeComponent = menus.find(menu => menu.label === activeMenu)?.content
@@ -63,4 +62,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
