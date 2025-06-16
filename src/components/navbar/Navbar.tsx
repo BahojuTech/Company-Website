@@ -9,20 +9,16 @@ import { usePathname } from 'next/navigation';
 
 const navMenu = [
   { id: 1, menu: 'Home', link: '/' },
-  { id: 2, menu: 'Service', link: '/service' },
-  { id: 3, menu: 'Blog', link: '/blog' },
-  { id: 4, menu: 'About us', link: '/about' },
-  { id: 5, menu: 'Training', link: '/training' },
-  { id: 6, menu: 'Contact us', link: '/contact' },
+  { id: 2, menu: 'About us', link: '/about' },
+  { id: 3, menu: 'Service', link: '/service' },
+  { id: 4, menu: 'Blog', link: '/blog' },
 ];
-
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
   const toggleButtonRef = useRef<HTMLDivElement>(null);
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -53,27 +49,36 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="text-primary text-xl sticky top-0 bg-white shadow-md z-50">
-      <div className="flex justify-between items-center max-w-[1200px] mx-auto w-full px-4 py-3">
+    <nav className="text-[#005F87] text-xl fixed top-8 left-1/2 transform -translate-x-1/2 bg-[#cee4eec0] rounded-full shadow-md z-50 w-[70%] max-w-[1200px] px-4">
+      <div className="flex justify-between items-center w-full py-3">
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo_3.png" width={100} height={100} alt="logo" className="w-auto h-10 md:h-20" />
+          <Image src="/logo/logo.png" width={153} height={25} alt="logo" />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="items-center hidden lg:flex">
-          <div className="flex gap-6 flex-grow justify-end pr-6">
-            {navMenu.map((menu) => (
-              <Link
-                href={menu.link}
-                key={menu.id}
-                className={`${pathname == menu.link && 'bg-blue-600 text-white px-3 py-1'} transition-colors`}
-              >
-                {menu.menu}
-              </Link>
-            ))}
-          </div>
-          <Button link='/contact' text="Hire us" />
+        <div className="hidden lg:flex gap-6 flex-grow justify-center pr-6">
+          {navMenu.map((menu) => (
+            <Link
+              href={menu.link}
+              key={menu.id}
+              className={`transition-colors px-3 py-2 text-base rounded-full ${
+                pathname === menu.link
+                  ? 'bg-[#005F87] text-white'
+                  : 'hover:bg-[#005F87] hover:text-white'
+              }`}
+            >
+              {menu.menu}
+            </Link>
+          ))}
+        </div>
+
+        {/* Hire Us Button */}
+        <div className="hidden lg:block">
+          <Link href={"/contact"} className={`border border-primary w-fit m-auto px-2 py-1 rounded-full cursor-pointer text-base`}>
+          Hire us
+          </Link>
+          {/* <Button link="/contact" text="Hire us" /> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -86,9 +91,7 @@ const Navbar = () => {
       </div>
 
       {/* Overlay */}
-      {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" />
-      )}
+      {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" />}
 
       {/* Mobile Sidebar */}
       <div
@@ -106,18 +109,20 @@ const Navbar = () => {
               ×
             </button>
           </div>
-          
+
           <div className="flex flex-col gap-4 px-6 py-4">
             {navMenu.map((menu) => (
               <Link
                 href={menu.link}
                 key={menu.id}
-                className="text-lg hover:text-blue-600 transition-colors"
+                className="text-sm hover:text-blue-600 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {menu.menu}
               </Link>
             ))}
+
+            <Button link="/contact" text="Hire us" />
           </div>
         </div>
       </div>
