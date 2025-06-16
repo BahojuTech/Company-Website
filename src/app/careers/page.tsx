@@ -47,7 +47,7 @@ const join = [
     
 ]
 
-const page = () => {
+const Page = () => {
 
   const firstThree = join.slice(0, 3)
   const lastTwo = join.slice(3)
@@ -131,4 +131,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

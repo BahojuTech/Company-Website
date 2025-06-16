@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 
 
-const page = () => {
+const Page = () => {
   return (
     <section>
        <HeroCarousel
@@ -32,4 +32,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
