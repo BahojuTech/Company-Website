@@ -15,6 +15,7 @@ const Footer = () => {
   const support = [
     { label: 'Contact us', href: '/contact' },
     { label: 'FAQ', href: '/faq' },
+    { label: 'Careers', href: '/careers' },
   ];
 
   const contactInfo = {
