@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 interface BlogPageProps {
-  params: { slug: string };  // ✅ Correct type for Next.js App Router
+  params: { slug: string }; 
 }
 
-// export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+// export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata | any> {
 //     const blog = await getData(params.slug);
 //     return {
 //       title: blog?.title || "Default Title",
@@ -17,7 +17,7 @@ interface BlogPageProps {
 //   }
 
 async function getData(slug: string) {
-  const query = `
+  const query = ` 
   *[_type == 'blog' && slug.current == '${slug}'] {
   'currentSlug': slug.current,
   title,

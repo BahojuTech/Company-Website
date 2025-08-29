@@ -17,7 +17,7 @@ const Training = () => {
   return (
     <div className="max-w-1200 bg-[#f0f7ff]">
       <HeroCarousel
-        images={images}
+        image={'/hero/ServiceHero.png'} 
         title="Training"
         description="Driven by Knowledge. Empowered by learning"
       />

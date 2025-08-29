@@ -3,8 +3,9 @@ import Image from 'next/image';
 
 interface ServiceSectionProps {
     title: string;
+    titleColor?:any;
     description: string;
-    items: string[]; 
+    items: any; 
     buttonText: string;
     imageSrc: string;
     imageAlt: string;
@@ -15,6 +16,7 @@ interface ServiceSectionProps {
 
 const SplitContent: React.FC<ServiceSectionProps> = ({
   title,
+  titleColor,
   description,
   items,
   buttonText,
@@ -26,24 +28,26 @@ const SplitContent: React.FC<ServiceSectionProps> = ({
 }) => {
   return (
     <section
-      className="mb-7"
+      className="pb-7"
       style={{ backgroundColor }}
     >
       <div className="px-6 md:px-12 lg:px-24 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Text Content */}
           <div className={`${reverse ? 'lg:order-2' : 'lg:order-1'}`}>
-            <h2 className="text-[#0088cc] text-2xl font-bold mb-4">
-              {title}
-            </h2>
+          <h2 className={`${titleColor ? `text-white` : "text-primary"} text-2xl font-bold mb-4`}>
+            {title}
+          </h2>
+
+
             <p className={`mb-6 leading-relaxed text-${textColor}`}>
               {description}
             </p>
             <ul className="mb-6 space-y-2">
-              {items.map((item, index) => (
+              {items.map((item: any, index:any) => (
                 <li key={index} className="flex items-center gap-2">
-                  <span className="text-[#0088cc]">✓</span>
-                  <span className={`text-${textColor}`}>{item}</span>
+                  <span className={`text-${item.color}`}>✓</span>
+                  <span className={`text-${textColor}`}>{item.text}</span>
                 </li>
               ))}
             </ul>
@@ -59,7 +63,7 @@ const SplitContent: React.FC<ServiceSectionProps> = ({
                 src={imageSrc}
                 alt={imageAlt}
                 fill
-                className="object-cover rounded-3xl transform transition-transform duration-300 hover:scale-105"
+                className="object-cover rounded-3xl"
               />
             </div>
           </div>
