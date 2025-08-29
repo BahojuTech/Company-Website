@@ -1,18 +1,27 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Brand = ({img, children}: any) => {
-  return (
-    <section>
-      <div className='flex'>
-        <div className='relative flex-[53%]'>
-          <Image src={img} alt='image' fill  />
-        </div>
-        <div className='flex-[47%] bg-primary text-white px-12 pt-10 pb-32 text-sm'>
-          {children}
-        </div>
+type BrandProps = {
+  title?: string;
+  img?: string;
+  children: any;
+}
 
-      </div>
+const Brand = ({title, img, children}: BrandProps) => {
+  return (
+    <section className='py-20 flex items-center justify-center' >
+        <div className='grid text-center lg:text-left gap-6  lg:flex gap-x-16 max-w-[1200px] items-center justify-center px-6'>
+            <div className='flex-1'>
+              <h3 className='text-2xl text-primary font-semibold mb-5'>{title}</h3>
+              <div className='flex lg:block justify-center items-center'>
+               <Image src={img || ''} alt='/' width={500} height={354} />
+              </div>
+            </div>
+            <div className=' grid gap-5 flex-1 text-lg'>
+             {children}
+            </div>
+        </div>
+       
     </section>
   )
 }

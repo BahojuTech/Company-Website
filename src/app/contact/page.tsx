@@ -1,65 +1,30 @@
-"use client"
-import React, { useState } from 'react'
-import ContactUs from '@/components/contact/ContactUs';
-import Faq from '@/components/contact/Faq';
+import ContactForm from '@/components/contact/ContactForm'
+import ContactInfo from '@/components/contact/ContactInfo'
+import HeroCarousel from '@/components/hero/HeroCarousel'
+import React from 'react'
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: "Contact"
+};
 
+const images: string[] = [
+    "/carousel1.jpg",
+    "/carousel2.png",
+    "/carousel3.png",
+    "/carousel4.png",
+    "/carousel5.png",
+  ];
 
-
-
-const menus = [
-  {label: 'Contact Us', content: <ContactUs />},
-  {label: 'FAQs', content: <Faq/>}
-]
-
-const Page = () => {
-  const [activeMenu, setActiveMenu] = useState(menus[0].label)
-
-    const activeComponent = menus.find(menu => menu.label === activeMenu)?.content
-
+const page = () => {
     return (
-        <section className='pb-28'>
-          <div className='pt-36 bg-blue-500 h-[80vh]'>
-            <div className=' max-w-[1300px] mx-auto'>
-              <div className='flex gap-5'>
-                {menus.map((menu, index) => (
-                  <div 
-                    key={index} 
-                    onClick={() => setActiveMenu(menu.label)}
-                    className={`${activeMenu === menu.label && 'border-b-white border-b-2'} text-white p-1 cursor-pointer`}
-                  >{menu.label}</div>
-                ))}
-              </div>
-            </div>
-
-            <div className='max-w-[1300px] mx-auto mt-5'>
-              {activeMenu === 'Contact Us' ? (
-                <>
-                  <h1 className="text-2xl text-white font-semibold mb-2">Contact Us</h1>
-                  <p className="text-white mb-6">
-                    Let's get this conversation started. Tell us a bit about yourself and
-                    we'll get in touch as soon as we can.
-                  </p>
-                </>
-              ) : (
-                <>
-                  <h1 className="text-white text-2xl font-semibold mb-2">Frequently Asked Questions</h1>
-                  <p className="text-white mb-6">
-                  You got questions? 
-                  Here are your answers!
-                  </p>
-                </>
-              )
-              }
-            </div>
-          </div>
-          
-
-          <div className=''>
-            {activeComponent}
-          </div>
-        </section>
+        <>
+        <HeroCarousel images={images} title={"Contact us"}  description={"Start the conversations to established good relationship and business"} />
+            {/* <Hero title={"Contact us"} body={"Start the conversations to established good relationship and business"} /> */}
+            <ContactInfo />
+            {/* <ContactForm /> */}
+        </>
     )
 }
 
-export default Page
+export default page

@@ -9,7 +9,7 @@ const Client = () => {
   ];
 
   return (
-    <section className="m-auto  py-24 bg-gray-50">
+    <section className="m-auto max-w-[1200px] py-24 bg-gray-50">
       <div className="text-center px-6">
         <h6 className="text-primary mb-2 text-xl font-semibold">
           We have more than 200 satisfied clients that works with us

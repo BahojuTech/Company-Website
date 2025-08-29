@@ -34,7 +34,7 @@ export default {
         slideLg: 'slideLg 30s linear infinite',
       },
       colors: {
-        primary: '#2885AB',
+        primary: '#32A0CE',
         primaryLight: '#BCE4F4E5',
         primaryThick: '#369DD1',
         primaryDark: '#023044',
