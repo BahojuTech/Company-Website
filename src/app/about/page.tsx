@@ -32,7 +32,7 @@ const page = () => {
       />
       <WhoWeAre/>
       <Client/>
-      <ThinkBigger/> 
+      <ThinkBigger/>
       <Marketing/>
       <Brand title='Recharging your brand to its maximum value.' img='/Rectangle about.png'>
         <p>At <span className='text-primary font-bold'>BAHOJU</span> , we believe that every brand has untapped potential waiting to be unlocked. Our mission is to recharge your brand, enhancing its value and positioning it for long-term success in the competitive digital landscape. We use innovative digital marketing strategies to breathe new life into your brand and help it thrive in an ever-changing market.
